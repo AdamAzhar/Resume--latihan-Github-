@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resume Adam</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b6b49c6ad2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "montserrat", sans-serif;
+}
+
+body {
+  background-color: grey;
+  font-size: 14px;
+  line-height: 21px;
+  color: whitesmoke;
+}
+/*  styling class */
+
+.b {
+  font-weight: 700;
+  font-size: 20px;
+  transform: uppercase;
+}
+
+.sb {
+  font-weight: 500;
+  font-size: 16px;
+}
+.resume {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 45px auto;
+}
+
+.rl {
+  width: 280px;
+  background: #0bb5f4;
+}
+
+.resume .rl .rp {
+  width: 100%;
+  height: 280px;
+}
+
+.resume .rl .rp img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .rl .rc {
+  padding: 0 15px;
+}
+
+.resume .title {
+  margin: 15px 0;
+}
+
+.resume .rl .b {
+  color: #fff;
+}
+
+.resume .rl .reg {
+  color: #b1eaff;
+}
+
+.resume .ri {
+  padding: 30px 0;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.resume .rl ul li {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.resume .rl ul li .icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #0bb5f4;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .rl ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .rl ul li .data {
+  color: #b1eaff;
+}
+
+.resume .rs ul li {
+  display: flex;
+  margin-bottom: 15px;
+  color: #b1eaff;
+  justify-content: space-between;
+}
+.resume .rl .rs ul li .sp {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.resume .rl .rs ul li .spc {
+  width: 15%;
+}
+
+.resume .rl .rs ul li .sp span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #fff;
+}
+
+.rb {
+  margin: 15px;
+}
+
+.rr {
+  background-color: #fff;
+  width: 500px;
+  height: auto;
+  color: black;
+}
+.resume .rr .b {
+  color: #009fd9;
+}
+
+.resume .rr p {
+  color: #666;
+}
+
+.resume .rr .rw ul {
+  padding-left: 45px;
+  overflow: hidden;
+}
+
+.resume .rr .rw ul li {
+  position: relative;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.resume .rr ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.resume .rr .rw ul li .info {
+  margin-bottom: 15px;
+}
+
+.resume .rr .rw ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -45px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #009fd9;
+}
+.resume .rr .rw ul li:after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -41px;
+  width: 2px;
+  height: 185px;
+  background: #009fd9;
+}
+
+.resume .rr .rh ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .rr .rh ul li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid #009fd9;
+  color: #009fd9;
+}
+
+.resume .rr .rh ul li i {
+  font-size: 30px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume.rr .rh ul li:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: -75px;
+  width: 75px;
+  height: 2px;
+  background: #009fd9;
+}
+
+.resume .rr .rh ul li:last-child:before {
+  display: none;
+}
+
+.resume .rr .rp ul li:after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 46px;
+  width: 92px;
+  height: 2px;
+  background: #009fd9;
+}
+
+.resume .rr .rp ul li:first-child:after {
+  display: none;
+}
+
+  </style>
+
+  <body>
+    <div class="resume">
+      <div class="rl">
+        <div class="rp">
+          <img src="img/adam.jpg" alt="Foto Profile" />
+        </div>
+        <div class="rc">
+
+          <!-- resume item start-->
+          <div class="ri">
+            <div class="title">
+             <p class="b">Adam Azhar</p>
+             <p class="reg">Santri SMP Bina Qurani Bogor</p>
+            </div>
+            <ul>
+             <!--alamat-->
+              <li>
+                <div class="icon"><i class="fa-solid fa-sign"></i></div>
+                Bekasi Selatan,<br> Kota Bekasi, Jawa Barat.
+              </li>
+              <!--nomer tlp-->
+              <li>
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                +62 851 6195 1150
+              </li>
+              <!--email-->
+              <li>
+                <div class="icon"><i class="fa-solid fa-paper-plane"></i></div>
+                adamazhar401@gmail.com</li>
+              <!--web-->
+              <li>
+                <div class="icon"><i class="fa-solid fa-globe"></i></div>adam.rescoplay.com
+              </li>
+            </ul>
+
+            
+        </div><!--resume item end-->
+        <!--Skill start here-->
+        <div class="ri rs">
+          <div class="tittle">
+            <p class="b">SKILLS</p>
+          </div>
+          <ul>
+            <!--Masak-->
+            <li>
+              <div class="sn">Masak</div>
+              <div class="sp">
+                <span style="width: 50%;"></span>
+              </div>
+              <div class="spc">50%</div>
+            </li>
+            <!--Manjat-->
+            <li>
+              <div class="sn">Manjat</div>
+              <div class="sp">
+                <span style="width:90%"></span>
+              </div>
+              <div class="spc">90%</div>
+
+            </li>
+            <!--Game-->
+            <li>
+              <div class="sn">Game</div>
+              <div class="sp">
+                <span style="width: 85%;"></span>
+              </div>
+              <div class="spc">85%</div>
+            </li>
+            <!--Lari-->
+            <li>
+              <div class="sn">Lari</div>
+              <div class="sp">
+                <span style="width: 80%; "></span>
+              </div>
+              <div class="spc">80%</div>
+            </li>
+
+           
+            
+
+          </ul>
+
+        </div>
+        <!--Skill end here-->
+
+        <!--Social Start here-->
+        <div class="ri rsoc">
+          <div class="title">
+            <p class="b">SOCIAL</p>
+          </div>
+        <ul>
+          
+            
+              
+            <li>
+              <div class="icon">
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="data">
+              <p class="sb">Tiktok</p>
+              <p>edzart132</p>
+              </div>
+            </li>
+            <li><div class="icon">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="data">
+              <p class="sb">Youtube</p>
+              <p>adam azharBQ</p>
+            </div>
+            </li>
+            <li><div class="icon">
+              <i class="fa-brands fa-discord"></i>
+            </div>
+            <div class="data">
+              <p class="sb">Discord</p>
+              <p> Edzart132</p>
+            </div>
+          </li>
+            <li><div class="icon">
+                  <i class="fa-solid fa-shield"></i>
+                </div>
+              <div class="data">
+                <p class="sb">WarGaming.net</p>
+                <p>Edzart_132</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!--Social End here-->    
+      </div>
+    </div>
+    <!--Resume right start-->
+    <div class="rr">
+      <!--about us-->
+      <div class="ri rb">
+        <div class="title">
+          <p class="b">About Us</p>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur </p>
+      </div>
+      <!--Resume Right End-->
+      <!--WORK EXPERIENCE-->
+      <div class="ri rw rb">
+        <div class="title">
+          <p class="b">Life Experience</p>
+          
+        </div> 
+
+        <ul>
+          <li><div class="date">2013-2015</div>
+            <div class="info">
+              <p class="sb">kindergarten students</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, 
+            </p>
+          </li>
+          <li><div class="date">2015-2020</div>
+            <div class="info">
+              <p class="sb"> elementary school students</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, 
+            </p>
+          </li> 
+          <li><div class="date">2021-Now</div>
+            <div class="info">
+              <p class="sb">junior high school student</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, 
+            </p>
+          </li>                  
+        </ul>
+      </div>
+      <!--work end-->
+      <!--education Start-->
+      <div class="ri rw rb">
+        <div class="title">
+          <p class="b">Life Experience</p>
+          
+        </div> 
+
+        <ul>
+          <li><div class="date">2013-2015</div>
+            <div class="info">
+              <p class="sb">Student of TK lupa</p>
+            </div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur natus laboriosam amet ducimus sapiente distinctio reprehenderit quisquam voluptate magni accusantium voluptas porro hic nihil facilis error esse quasi, non co.
+            </p>
+          </li> 
+          <li><div class="date">2015-Now</div>
+            <div class="info">
+              <p class="sb">Student of SDIT Al-Aziz-Student of Bina Qurani Islamic Boarding School</p>
+            </div>
+            <p>
+              SDIT AL AZIIZ adalah salah satu satuan pendidikan dengan jenjang SD di PENGASINAN, Kec. Rawalumbu, Kota Bekasi, Jawa Barat. Dalam menjalankan kegiatannya, SDIT AL AZIIZ berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.
+              
+            </p>
+          </li>                  
+        </ul>
+      </div>        
+      
+        <!--education end-->
+      <div class="ri rh rb rp">
+        <div class="title">
+          <p class="b">Hobby</p>
+        </div>
+        <ul>
+          <li>
+            <i class="fa-solid fa-headset"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-mountain-sun"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-futbol"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-cookie-bite"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+   
+       
+      
+    
+       
+      
+  </body>
+  <!-- --->
+  
+</html>

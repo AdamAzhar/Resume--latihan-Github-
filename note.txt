@@ -1,0 +1,15 @@
+rl= resume left
+rp=resume profil
+b=bold
+sb=semi bold
+rc=resume cv
+reg=regular
+ri=resume item
+rs=resume skill
+Sn=skill name
+sp=skill progress
+spc=skill percentage
+rsoc=resume social
+ra=resume about
+rw=resume work
+rh=resume hobby
